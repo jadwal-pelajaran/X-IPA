@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+
+        body {
+            font-family: -apple-system,BlinkMacSystemFont,Segoe\ UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica\ Neue,sans-serif;
+            width: 100%;
+            background-color: whitesmoke;
+            max-width: 100%;
+            cursor: default;
+            overflow-x: auto;
+        }
+
+        .navbar {
+        /* height: 100px;
+        font-size: 14px;
+        overflow: hidden;
+        transition: 0.4s;
+        width: 100%;
+        top: 0;
+        z-index: 99; */
+        padding-top: 40px;
+        transition: 0.5s ease;
+        background-color: transparent;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      .navbar-nav {
+        margin-left: 200px;
+      }
+
+      .logo {
+        margin-left: 100px;
+      }
+
+      .nav-link {
+        font-weight: 600;
+        color: black;
+        font-size: xx-large;
+      }
+
+      .nav-link:hover {
+        color: black!important;
+      }
+
+        .pelajaran {
+            background-color: transparent;
+            margin-top: 20%;
+            border-radius: 50px;           
+        }
+
+        .namapel:hover {
+            box-shadow: 13px 12px 26px 0px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 13px 12px 26px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 13px 12px 26px 0px rgba(0,0,0,0.75);
+            transition: 0.5s;
+        }
+
+        .namapel {
+            background-color: white!important;
+            border: none;
+            height: 500px;
+            padding: 200px;
+            padding-right: 0px;
+            padding-left: 0px;
+            border-radius: 50px;
+            transition: 0.5s;
+        }
+        
+
+        .namapel h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 900;
+        }
+
+        .namapel-huruf::after {
+            content: '';
+            height: 4px;
+            background: black;
+            position: absolute;
+            justify-content: center;
+            margin: auto;
+            top: 100px;
+            left: 0;
+            right: 0;
+            width: 30%;
+        }
+
+        .namapel-huruf {
+            text-decoration: none; 
+            position: relative; 
+        }
+
+        /* SENIN */
+
+        #senin, #selasa, #rabu, #kamis, #jumat2, #jumat4 {
+            margin-top: 100px;
+            padding-top: 200px;
+        }
+
+        .jadwalpel {
+            background-color: white;
+            border-radius: 25px;
+            padding: 50px;
+            margin: 20px;
+            cursor: pointer;
+            border: 3px solid white;
+            transition: 0.7s;
+        }
+
+        .jadwalpel:hover {
+            border: 3px solid black;
+            transition: 0.7s;
+        }
+
+        .judul-jadwalpel  {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .senin {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 900;
+        }
+
+        footer {
+            background-color: transparent;
+            color: black;
+            margin-top: 150px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 900;
+        }
+        
+    </style>
+
+    <title>Wallpaper Dekstop</title>
+  </head>
+  <body>
+
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+          <a id="logo" class="logo" href="http://www.autotradegold.cloud"><img src="img/logonavbar.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link ms-3" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ms-3" href="#senin">Senin</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ms-3" href="#selasa">Selasa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ms-3" href="#rabu">Rabu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ms-3" href="#kamis">Kamis</a>
+              </li>
+              <li class="nav-item dropdown ms-4">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Jumat
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#jumat2">Pekan Genap 2</a></li>
+                  <li><a class="dropdown-item" href="#jumat4">Pekan Genap 4</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+<section id="judul-body">
+    <div class="container">
+        <div class="row justify-content-center text-center pelajaran">
+                <div class="divjudulpel">
+                    <div class="namapel">
+                    <h1 class="namapel-huruf">JADWAL PELAJARAN</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br>
+
+<section id="senin">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="judul-jadwalpel">
+                <h1 class="senin">SENIN</h1>
+            </div>
+            <div class="col-md-6">
+                <div class="jadwalpel">
+                <div class="jam text-center">
+                    <h2>06.30 - 07.00</h2>
+                </div>
+                <div class="nama-pelajaran text-center">
+                    <h1>Tilawah dan Motivasi</h1>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-6">
+            <div class="jadwalpel">
+                <div class="jam text-center">
+                    <h2>07.00 - 08.00</h2>
+                </div>
+                <div class="nama-pelajaran text-center">
+                    <h1>Program Sekolah</h1>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-6">
+                <div class="jadwalpel">
+                    <div class="jam text-center">
+                        <h2>08.00 - 08.30</h2>
+                    </div>
+                    <div class="nama-pelajaran text-center">
+                        <h1>Dhuha & Setoran Tahfidz</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="jadwalpel">
+                    <div class="jam text-center">
+                        <h2>08.30 - 10.00</h2>
+                    </div>
+                    <div class="nama-pelajaran text-center">
+                        <h1>Sejarah Wajib</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="jadwalpel">
+                    <div class="jam text-center">
+                        <h2>10.15 - 11.45</h2>
+                    </div>
+                    <div class="nama-pelajaran text-center">
+                        <h1>Biologi</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="jadwalpel">
+                    <div class="jam text-center">
+                        <h2>12.45 - 13.00</h2>
+                    </div>
+                    <div class="nama-pelajaran text-center">
+                        <h1>Persiapan Kimia</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="jadwalpel">
+                    <div class="jam text-center">
+                        <h2>13.00 - 14.30</h2>
+                    </div>
+                    <div class="nama-pelajaran text-center">
+                        <h1>Kimia</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br>
+
+<section id="selasa">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="judul-jadwalpel">
+                <h1 class="senin">SELASA</h1>
+            </div>
+            <div class="col-md-6">
+                <div class="jadwalpel">
+                <div class="jam text-center">
+                    <h2>06.30 - 07.00</h2>
+                </div>
+                <div class="nama-pelajaran text-center">
+                    <h1>Tilawah dan Motivasi</h1>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-6">
+            <div class="jadwalpel">
+                <div class="jam text-center">
+                    <h2>07.00 - 07.15</h2>
+                </div>
+                <div class="nama-pelajaran text-center">
+                    <h1>Literasi</h1>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-6">
+                <div class="jadwalpel">
+                    <div class="jam text-center">
+                        <h2>07.15 - 08.15</h2>
+                    </div>
+                    <div class="nama-pelajaran text-center">
+                        <h1>Pendidikan Kewarganegaraan</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="jadwalpel">
+                    <div class="jam text-center">
+                        <h2>08.15 - 08.45</h2>
+                    </div>
+                    <div class="nama-pelajaran text-center">
+                        <h1>Dhuha dan Setoran Tahfidz</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="jadwalpel">
+                    <div class="jam text-center">
+                        <h2>08.45 - 10.15</h2>
+                    </div>
+                    <div class="nama-pelajaran text-center">
+                        <h1>Seni Budaya</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="jadwalpel">
+                    <div class="jam text-center">
+                        <h2>10.15 - 11.45</h2>
+                    </div>
+                    <div class="nama-pelajaran text-center">
+                        <h1>Fisika</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="jadwalpel">
+                    <div class="jam text-center">
+                        <h2>12.45 - 13.00</h2>
+                    </div>
+                    <div class="nama-pelajaran text-center">
+                        <h1>Persiapan Matematika</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="jadwalpel">
+                    <div class="jam text-center">
+                        <h2>13.00 - 14.30</h2>
+                    </div>
+                    <div class="nama-pelajaran text-center">
+                        <h1>Matematika</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br>
+
+<section id="rabu">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="judul-jadwalpel">
+                <h1 class="senin">RABU</h1>
+            </div>
+            <div class="col-md-6">
+                <div class="jadwalpel">
+                <div class="jam text-center">
+                    <h2>06.30 - 07.00</h2>
+                </div>
+                <div class="nama-pelajaran text-center">
+                    <h1>Tilawah dan Motivasi</h1>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-6">
+            <div class="jadwalpel">
+                <div class="jam text-center">
+                    <h2>07.00 - 08.30</h2>
+                </div>
+                <div class="nama-pelajaran text-center">
+                    <h1>Tahfidz</h1>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-6">
+                <div class="jadwalpel">
+                    <div class="jam text-center">
+                        <h2>08.30 - 09.00</h2>
+                    </div>
+                    <div class="nama-pelajaran text-center">
+                        <h1>Dhuha & Setoran Tahfidz</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="jadwalpel">
+                    <div class="jam text-center">
+                        <h2>09.00 - 10.00</h2>
+                    </div>
+                    <div class="nama-pelajaran text-center">
+                        <h1>Bahasa Sunda</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="jadwalpel">
+                    <div class="jam text-center">
+                        <h2>10.15 - 11.45</h2>
+                    </div>
+                    <div class="nama-pelajaran text-center">
+                        <h1>Kimia</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="jadwalpel">
+                    <div class="jam text-center">
+                        <h2>12.45 - 13.00</h2>
+                    </div>
+                    <div class="nama-pelajaran text-center">
+                        <h1>Persiapan Biologi</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="jadwalpel">
+                    <div class="jam text-center">
+                        <h2>13.00 - 14.30</h2>
+                    </div>
+                    <div class="nama-pelajaran text-center">
+                        <h1>Biologi</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br>
+
+<section id="kamis">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="judul-jadwalpel">
+                <h1 class="senin">KAMIS</h1>
+            </div>
+            <div class="col-md-6">
+                <div class="jadwalpel">
+                <div class="jam text-center">
+                    <h2>06.30 - 07.00</h2>
+                </div>
+                <div class="nama-pelajaran text-center">
+                    <h1>Tilawah dan Motivasi</h1>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-6">
+            <div class="jadwalpel">
+                <div class="jam text-center">
+                    <h2>07.00 - 08.30</h2>
+                </div>
+                <div class="nama-pelajaran text-center">
+                    <h1>PJOK</h1>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-6">
+                <div class="jadwalpel">
+                    <div class="jam text-center">
+                        <h2>08.30 - 09.00</h2>
+                    </div>
+                    <div class="nama-pelajaran text-center">
+                        <h1>Dhuha & Setoran Tahfidz</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="jadwalpel">
+                    <div class="jam text-center">
+                        <h2>09.00 - 10.00</h2>
+                    </div>
+                    <div class="nama-pelajaran text-center">
+                        <h1>ECLUB</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="jadwalpel">
+                    <div class="jam text-center">
+                        <h2>10.15 - 11.45</h2>
+                    </div>
+                    <div class="nama-pelajaran text-center">
+                        <h1>Matematika</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="jadwalpel">
+                    <div class="jam text-center">
+                        <h2>12.45 - 13.00</h2>
+                    </div>
+                    <div class="nama-pelajaran text-center">
+                        <h1>Persiapan Fisika</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="jadwalpel">
+                    <div class="jam text-center">
+                        <h2>13.00 - 14.30</h2>
+                    </div>
+                    <div class="nama-pelajaran text-center">
+                        <h1>Fisika</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br>
+
+<section id="jumat2">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="judul-jadwalpel">
+                <h1 class="senin">JUM'AT (Pekan Genap 2)</h1>
+            </div>
+            <div class="col-md-6">
+                <div class="jadwalpel">
+                <div class="jam text-center">
+                    <h2>06.30 - 07.30</h2>
+                </div>
+                <div class="nama-pelajaran text-center">
+                    <h1>Pendidikan Agama Islam</h1>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-6">
+            <div class="jadwalpel">
+                <div class="jam text-center">
+                    <h2>07.30 - 08.30</h2>
+                </div>
+                <div class="nama-pelajaran text-center">
+                    <h1>Bahasa Inggris</h1>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-6">
+                <div class="jadwalpel">
+                    <div class="jam text-center">
+                        <h2>08.30 - 09.00</h2>
+                    </div>
+                    <div class="nama-pelajaran text-center">
+                        <h1>Dhuha & Setoran Tahfidz</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="jadwalpel">
+                    <div class="jam text-center">
+                        <h2>09.00 - 09.15</h2>
+                    </div>
+                    <div class="nama-pelajaran text-center">
+                        <h1>Membersihkan Ruangan</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="jadwalpel">
+                    <div class="jam text-center">
+                        <h2>09.15 - 09.30</h2>
+                    </div>
+                    <div class="nama-pelajaran text-center">
+                        <h1>Persiapan B.Indonesia</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="jadwalpel">
+                    <div class="jam text-center">
+                        <h2>09.30 - 11.00</h2>
+                    </div>
+                    <div class="nama-pelajaran text-center">
+                        <h1>Bahasa Indonesia</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br>
+
+<section id="jumat4">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="judul-jadwalpel">
+                <h1 class="senin">JUM'AT (Pekan Genap 4)</h1>
+            </div>
+            <div class="col-md-6">
+                <div class="jadwalpel">
+                <div class="jam text-center">
+                    <h2>06.30 - 07.30</h2>
+                </div>
+                <div class="nama-pelajaran text-center">
+                    <h1>Pendidikan Agama Islam</h1>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-6">
+            <div class="jadwalpel">
+                <div class="jam text-center">
+                    <h2>07.30 - 08.30</h2>
+                </div>
+                <div class="nama-pelajaran text-center">
+                    <h1>Bahasa Indonesia</h1>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-6">
+                <div class="jadwalpel">
+                    <div class="jam text-center">
+                        <h2>08.30 - 09.00</h2>
+                    </div>
+                    <div class="nama-pelajaran text-center">
+                        <h1>Dhuha & Setoran Tahfidz</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="jadwalpel">
+                    <div class="jam text-center">
+                        <h2>09.00 - 09.15</h2>
+                    </div>
+                    <div class="nama-pelajaran text-center">
+                        <h1>Membersihkan Ruangan</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="jadwalpel">
+                    <div class="jam text-center">
+                        <h2>09.15 - 09.30</h2>
+                    </div>
+                    <div class="nama-pelajaran text-center">
+                        <h1>Persiapan B.Inggris</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="jadwalpel">
+                    <div class="jam text-center">
+                        <h2>09.30 - 11.00</h2>
+                    </div>
+                    <div class="nama-pelajaran text-center">
+                        <h1>Bahasa Inggris</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="text-center ">
+    <p>
+      @Copyright 2021 | Suckma_Dick
+    </p>
+  </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <script>
+
+        window.onscroll = function() {scrollFunction()};
+              
+              function scrollFunction() {
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                  document.getElementById("navbar").style.padding = "10px 10px";
+                  document.getElementById("logo").style.fontSize = "25px";
+                  document.getElementById("navbar").style.backgroundColor = "white";
+                  document.getElementById("navbar").style.transition = "0.5s ease";
+                  document.getElementById("navbar").style.color = "white";
+                } else {
+                  document.getElementById("navbar").style.backgroundColor = "transparent";
+                  document.getElementById("navbar").style.transition = "0.5s ease-out";
+                  document.getElementById("navbar").style.backgroundImage = "none";
+                  document.getElementById("navbar").style.paddingTop = "40px";
+                }
+              }   
+        </script>
+  </body>
+</html>
